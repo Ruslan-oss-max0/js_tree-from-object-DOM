@@ -21,11 +21,11 @@ const food = {
 const tree = document.querySelector('#tree');
 
 function createTree(element, data) {
-  const goodsList = document.createElement('ul');
-
   if (Object.keys(data).length === 0) {
     return;
   }
+
+  const goodsList = document.createElement('ul');
 
   for (const good in data) {
     const goodItem = document.createElement('li');
